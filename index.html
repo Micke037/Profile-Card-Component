@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+          position: relative;
+          background-color: hsl(185, 75%, 39%);
+          overflow: hidden;
+          font-family: 'Kumbh Sans', sans-serif;
+          font-size: 18px;
+
+          background-image: url(images/bg-pattern-top.svg), 
+          url(images/bg-pattern-bottom.svg);
+
+          background-repeat: no-repeat, no-repeat;
+
+          background-position: right 50vw bottom 50vh, 
+          left 50vw top 50vh;
+
+        }
+
+        /* .lopta-2 {
+          position: absolute;
+          top: 600px;
+          right: -150px;
+        } 
+
+        .lopta-1 {
+          position: absolute;
+          top: -400px;
+          left: -220px;
+        } */
+
+        
+
+        .card {
+          margin: 25vh auto;
+          width: 350px;
+          background-color: #fff;
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.089);
+          border-radius: 15px;
+          position: relative;
+          z-index: 100;
+          
+        }
+        .b-img {
+          border-radius: 15px 15px 0 0;
+          /* position: relative; */
+        }
+
+       
+
+        .main-img {
+          border-radius: 100%;
+          position: absolute;
+          
+          top: 38%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 4px;
+          background-color: #fff;
+        }
+
+        .text {
+          display: flex;
+          margin-top: 60px;
+          
+          justify-content: center;
+          gap: 5px;
+        }
+
+        .name {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .age {
+          color: hsl(0, 0%, 59%)
+        }
+        .london {
+          text-align: center;
+          color: hsl(0, 0%, 59%);
+          font-size: 15px;
+          margin-bottom: 30px;
+        }
+
+        .followers {
+          display: flex;
+          gap: 15px;
+          justify-content: space-between;
+          padding: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+          border-top: 1px solid hsla(0, 0%, 59%, 0.295);
+        }
+
+        .numbers {
+          text-align: center;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+
+        .extra {
+          color: hsl(0, 0%, 59%);
+          font-size: 15px;
+        }
+
+        /* body {
+          background-image: url(images/bg-pattern-bottom.svg);
+          background-image: url(images/bg-pattern-top);
+        } */
+
+    
+
+  </style>
+</head>
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Uros Milicevic</a>.
+  </div>
+  
+  
+
+    <div class="card">
+      <div class="b-img">
+    <img src="images/bg-pattern-card.svg" class="b-img" alt="Vibrant, collorfull pattern"/>
+    </div>
+    
+    
+      <img src="images/image-victor.jpg" class="main-img" alt="Profile picture of Victor Crest"/>
+    
+  <div class="text">
+    <p class="name">Victor Crest</p>
+    <p class="age">26</p>
+  </div>
+  <p class="london">London</p>
+  <div class="followers">
+
+
+    <div class="number-extra">
+  <p class="numbers">  
+  80K
+</p>
+<p class="extra">Followers</p>
+</div>
+
+<div class="number-extra">
+<p class="numbers">  
+  803K
+</p>
+<p class="extra">Likes</p>
+</div>
+
+<div class="number-extra">
+  <p class="numbers">  
+  1.4K
+</p>
+<p class="extra">Photos</p>
+
+</div>
+
+</div>
+</div>
+  
+    <!-- <div class="lopte"> 
+      
+  <img class="lopta-1" src="images/bg-pattern-top.svg" alt="lopta"/>
+
+
+  <img class="lopta-2" src="images/bg-pattern-bottom.svg" alt="lopta"/>
+
+    </div> -->
+
+</body>
+</html>
