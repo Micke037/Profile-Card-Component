@@ -51,6 +51,7 @@
 
           background-position: right 35vw bottom 45vh, 
           left 30vw top 45vh;
+          overflow: scroll;
 
       }
 
@@ -72,6 +73,7 @@
 
           background-position: right 40vw bottom 50vh, 
           left 40vw top 50vh;
+          overflow: scroll;
 
         }
 
